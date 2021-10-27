@@ -1,6 +1,13 @@
 {
   "name": "Chrome Extension MV3",
   "description": "Learning all about Chrome Extensions Manifest Version 3!",
-  "version": "0.1.0",
-  "manifest_version": 3
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"]
 }
